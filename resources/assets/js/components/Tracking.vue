@@ -25,7 +25,7 @@
   import axios from 'axios';
   import State from './State';
   import StateForm from './StateForm';
-  import MainLoader from '.MainLoader';
+  import MainLoader from './MainLoader';
 
   export default {
     components: {

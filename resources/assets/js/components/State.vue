@@ -19,7 +19,7 @@
       </div>
       <div class="editing" v-show="editing">
         <p>
-          <select v-model="selected">
+          <!-- <select v-model="selected">
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
               <option value="AZ">Arizona</option>
@@ -71,7 +71,8 @@
               <option value="WV">West Virginia</option>
               <option value="WI">Wisconsin</option>
               <option value="WY">Wyoming</option>
-          </select>
+          </select> -->
+          <input type="text" v-model="name" />
           <input type="text" v-model="year" />
           <input type="text" v-model="days" />
           <input type="text" v-model="notes" />

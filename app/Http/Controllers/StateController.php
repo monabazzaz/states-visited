@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\State;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Response;
 
 class StateController extends Controller
 {
@@ -12,7 +15,7 @@ class StateController extends Controller
     $states = State::all();
     return Response::json($states);
   }
-  
+
   public function show ($id)
   {
     $state = State::find($id);
