@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Armata|Arsenal|Coming+Soon|Glegoo|Julius+Sans+One|Nixie+One|Playfair+Display+SC|Poiret+One" rel="stylesheet">
+
 
         <title>50 States</title>
     </head>

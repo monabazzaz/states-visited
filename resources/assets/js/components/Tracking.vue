@@ -1,13 +1,14 @@
 <template>
     <div class="container">
-      <h1>Journey to all 50 States</h1>
-      <p class="description">Here you can log which states you've visited so you can keep track of which ones you have left.</p>
-
+      <div class="head">
+        <img src='/images/mapcover.png'>
+        <p class="description">Here you can log which states you've visited so you can keep track of which ones you have left.</p>
+      </div>
 
       <StateForm @created="fetch"></StateForm>
 
       <div class="StateList" v-show="states.length > 0">
-        <State v-for="(state, index) in states" :key="index" :state="name" @updated="update" @deleted="remove(index)"></State>
+        <State v-for="(state, index) in states" :key="index" :state="state" @updated="update" @deleted="remove(index)"></State>
       </div>
 
       <p v-show="states.length === 0">You have not visited any states yet.</p>
@@ -83,6 +84,28 @@
 
 
 <style>
+
+  body {
+    background-color: #dbe9fc;
+  }
+
+  .head {
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  img {
+    width: 70%;
+    height: auto;
+  }
+
+  .description {
+    font-size: 1.75em;
+    font-family: 'Coming Soon', cursive;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #4286f4;
+  }
 
   .fade-enter-active, .fade-leave-active {
   transition: opacity .5s

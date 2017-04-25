@@ -15,11 +15,11 @@
     </div>
     <div class="panel-body">
       <div class="live" v-show="!editing">
-        {{ state.days }} {{ state.rating }}
+        {{ state.name }} {{ state.year }}
       </div>
       <div class="editing" v-show="editing">
         <p>
-          <!-- <select v-model="selected">
+          <select v-model="selected">
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
               <option value="AZ">Arizona</option>
@@ -71,8 +71,7 @@
               <option value="WV">West Virginia</option>
               <option value="WI">Wisconsin</option>
               <option value="WY">Wyoming</option>
-          </select> -->
-          <input type="text" v-model="name" />
+          </select>
           <input type="text" v-model="year" />
           <input type="text" v-model="days" />
           <input type="text" v-model="notes" />
