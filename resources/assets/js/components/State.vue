@@ -19,7 +19,9 @@
       </div>
       <div class="editing" v-show="editing">
         <p>
-          <select v-model="selected">
+        <div class="form-group">
+          <label for="name">Edit state visited</label>
+          <select class="form-control" v-model="name">
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
               <option value="AZ">Arizona</option>
@@ -72,10 +74,23 @@
               <option value="WI">Wisconsin</option>
               <option value="WY">Wyoming</option>
           </select>
-          <input type="text" v-model="year" />
-          <input type="text" v-model="days" />
-          <input type="text" v-model="notes" />
-          <input type="text" v-model="rating" />
+        </div>
+        <div class="form-group">
+          <label for="year">Edit year visited</label>
+          <input class="form-control" type="text" v-model="year" />
+        </div>
+        <div class="form-group">
+          <label for="days">Edit number of days</label>
+          <input class="form-control" type="text" v-model="days" />
+        </div>
+        <div class="form-group">
+          <label for="notes">Edit your memos</label>
+          <textarea class="form-control" v-model="notes"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="rating">Edit your rating</label>
+          <input class="form-control" type="text" v-model="rating" />
+        </div>
         </p>
         <p>
           <button class="btn btn-success" @click="save">Save</button>

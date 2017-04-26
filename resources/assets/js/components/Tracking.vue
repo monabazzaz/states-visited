@@ -66,11 +66,11 @@
     },
 
     update (data) {
-        // this.fetch();
-        var i = this.states.indexOf(data.state);
-        for (var d in data) {
-          this.states[i][d] = data[d];
-        }
+        this.fetch();
+        // var i = this.states.indexOf(data.state);
+        // for (var d in data) {
+        //   this.states[i][d] = data[d];
+        // }
       },
 
     remove (i) {

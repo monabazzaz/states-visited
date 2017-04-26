@@ -1,6 +1,8 @@
 <template>
   <div class="StateForm">
-    <select v-model="selected">
+    <div class="form-group">
+    <label for="name">Select a state</label>
+    <select class="form-control" v-model="name">
         <option value="AL">Alabama</option>
         <option value="AK">Alaska</option>
         <option value="AZ">Arizona</option>
@@ -53,10 +55,23 @@
         <option value="WI">Wisconsin</option>
         <option value="WY">Wyoming</option>
     </select>
-    <input type="text" v-model="year" />
-    <input type="text" v-model="days" />
-    <input type="text" v-model="notes" />
-    <input type="text" v-model="rating" />
+    </div>
+    <div class="form-group">
+      <label for="year">What year did you visit?</label>
+      <input class="form-control" type="text" v-model="year" />
+    </div>
+    <div class="form-group">
+      <label for="days">How many days did you stay?</label>
+      <input class="form-control" type="text" v-model="days" />
+    </div>
+    <div class="form-group">
+      <label for="notes">Add some memos</label>
+      <textarea class="form-control" v-model="notes"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="rating">Give it a rating!</label>
+      <input class="form-control" v-model="rating" />
+    </div>
     <button class="btn btn-primary" @click="create" :disabled="loading">Create State</button>
   </div>
 </template>
@@ -124,5 +139,10 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+  .StateForm {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
 </style>
