@@ -73,7 +73,7 @@
           <label for="rating col-form-label">Give it a rating!</label>
           <input class="form-control" v-model="rating" />
         </div>
-        <button class="btn btn-primary" @click="create" :disabled="loading">Create State</button>
+        <button class="btn btn-primary" @click="create" :disabled="loading">Add State</button>
       </div>
       <!-- <div class="col-lg-8 col-md-8 col-sm-12"></div> -->
     </div>
@@ -160,6 +160,11 @@ export default {
     border: 1px solid;
     border-color: #2317C9;
     border-radius: 3px;
+  }
+
+  label {
+    font-family: 'Julius Sans One', sans-serif;
+    color: #4286f4;
   }
 
 </style>

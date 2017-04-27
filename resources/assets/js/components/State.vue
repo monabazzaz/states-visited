@@ -5,7 +5,7 @@
         <div class="panel-heading">
           <modal name="preview">hello, world!</modal>
           <a :href="preview" @click="show">
-            <i class="glyphicon glyphicon-earphone"></i>
+            <i class="glyphicon glyphicon-eye-open"></i>
           </a>
 
           <a class="tool" href="#" @click.prevent="remove">
@@ -206,7 +206,18 @@ export default {
   padding-top: 20px;
 }
 
+.form-control {
+  font-family: 'Julius Sans One', sans-serif;
+  color: #4286f4;
+}
+
 .tool > i {
   margin-left: 15px;
+}
+
+@media screen and (max-width: 700px){
+  .visited {
+    width: 350px;
+  }
 }
 </style>
