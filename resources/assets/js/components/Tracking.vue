@@ -24,6 +24,7 @@
 <script>
 
   import axios from 'axios';
+  import vmodal from 'vue-js-modal';
   import State from './State';
   import StateForm from './StateForm';
   import MainLoader from './MainLoader';
@@ -85,9 +86,13 @@
 
 <style>
 
-  body {
-    background-color: #dbe9fc;
-  }
+/*body {
+  background: url(/images/stripes.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  }*/
 
   .head {
     text-align: center;

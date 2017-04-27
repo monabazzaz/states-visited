@@ -2,8 +2,8 @@
   <!-- <div class="container-fluid"> -->
     <div class="StateForm">
       <!-- <div class= "row"> -->
-        <div class="form-group col-lg-4 col-md-4 col-sm-12">
-        <label for="name">Select a state</label>
+        <div class="form-group leftbox">
+        <label for="name col-form-label">Select a state</label>
         <select class="form-control" v-model="name">
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
@@ -58,24 +58,24 @@
             <option value="WY">Wyoming</option>
         </select>
         <div class="form-group">
-          <label for="year">What year did you visit?</label>
+          <label for="year col-form-label">What year did you visit?</label>
           <input class="form-control" type="text" v-model="year" />
         </div>
         <div class="form-group">
-          <label for="days">How many days did you stay?</label>
+          <label for="days col-form-label">How many days did you stay?</label>
           <input class="form-control" type="text" v-model="days" />
         </div>
         <div class="form-group">
-          <label for="notes">Add some memos</label>
+          <label for="notes col-form-label">Add some memos</label>
           <textarea class="form-control" v-model="notes"></textarea>
         </div>
         <div class="form-group">
-          <label for="rating">Give it a rating!</label>
+          <label for="rating col-form-label">Give it a rating!</label>
           <input class="form-control" v-model="rating" />
         </div>
         <button class="btn btn-primary" @click="create" :disabled="loading">Create State</button>
       </div>
-      <div class="col-lg-8 col-md-8 col-sm-12"></div>
+      <!-- <div class="col-lg-8 col-md-8 col-sm-12"></div> -->
     </div>
   <!-- </div> -->
 <!-- </div> -->
@@ -148,10 +148,18 @@ export default {
   .StateForm {
     padding-top: 20px;
     padding-bottom: 30px;
-    float: left; width: 100%;
+    float: left;
+    width: 350px;
     position: relative;
     display: inline-block;
+    overflow: hidden;
+  }
 
+  .leftbox {
+    padding: 15px;
+    border: 1px solid;
+    border-color: #2317C9;
+    border-radius: 3px;
   }
 
 </style>

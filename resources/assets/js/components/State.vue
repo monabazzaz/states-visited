@@ -1,9 +1,10 @@
 <template>
   <!-- <div class="container-fluid"> -->
     <div class= "visited">
-      <div class="State panel panel-default col-lg-8 col-md-8 col-sm-12">
+      <div class="State panel panel-default rightbox">
         <div class="panel-heading">
-          <a :href="'state:' + state.name">
+          <modal name="preview">hello, world!</modal>
+          <a :href="preview" @click="show">
             <i class="glyphicon glyphicon-earphone"></i>
           </a>
 
@@ -22,7 +23,7 @@
           <div class="editing" v-show="editing">
             <p>
             <div class="form-group">
-              <label for="name">Edit state visited</label>
+              <label for="name col-form-label">Edit state visited</label>
               <select class="form-control" v-model="name">
                   <option value="AL">Alabama</option>
                   <option value="AK">Alaska</option>
@@ -78,19 +79,19 @@
               </select>
             </div>
             <div class="form-group">
-              <label for="year">Edit year visited</label>
+              <label for="year col-form-label">Edit year visited</label>
               <input class="form-control" type="text" v-model="year" />
             </div>
             <div class="form-group">
-              <label for="days">Edit number of days</label>
+              <label for="days col-form-label">Edit number of days</label>
               <input class="form-control" type="text" v-model="days" />
             </div>
             <div class="form-group">
-              <label for="notes">Edit your memos</label>
+              <label for="notes col-form-label">Edit your memos</label>
               <textarea class="form-control" v-model="notes"></textarea>
             </div>
             <div class="form-group">
-              <label for="rating">Edit your rating</label>
+              <label for="rating col-form-label">Edit your rating</label>
               <input class="form-control" type="text" v-model="rating" />
             </div>
             </p>
@@ -101,12 +102,13 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-12"></div>
+      <!-- <div class="col-lg-4 col-md-4 col-sm-12"></div> -->
     </div>
   <!-- </div> -->
 </template>
 <script>
 import axios from 'axios';
+import vmodal from 'vue-js-modal';
 
 export default {
 
@@ -122,11 +124,19 @@ export default {
       notes: this.state.notes,
       rating: this.state.rating,
       editing: false,
-      loading: false
+      loading: false,
+      preview: false
     }
   },
 
   methods: {
+
+    show () {
+      this.$modal.show('preview');
+    },
+    hide () {
+      this.$modal.hide('preview');
+    },
 
     remove () {
       console.log('State -> remove');
@@ -187,9 +197,13 @@ export default {
 <style>
 
 .visited {
-  float: right; width: 100%;
+  float: right;
+  width: 700px;
   position: relative;
-  display: inline-block;
+  display: block;
+  /*border: solid 1px black;
+  border-radius: 3px;*/
+  padding-top: 20px;
 }
 
 .tool > i {
