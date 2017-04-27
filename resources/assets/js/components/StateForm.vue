@@ -71,7 +71,7 @@
         </div>
         <div class="form-group">
           <label for="rating col-form-label">Give it a rating!</label>
-          <input class="form-control" v-model="rating" />
+          <star-rating v-model="rating" v-bind:star-size="30" @rating-selected="setRating"></star-rating>
         </div>
         <button class="btn btn-primary" @click="create" :disabled="loading">Add State</button>
       </div>
@@ -84,10 +84,12 @@
 <script>
 import axios from 'axios';
 import Loader from './Loader';
+import StarRating from 'vue-star-rating';
 
 export default {
   components: {
-    Loader
+    Loader,
+    StarRating
   },
 
   data() {
@@ -96,12 +98,18 @@ export default {
       year: '',
       days: '',
       notes: '',
-      rating: '',
+      rating: 0,
       loading: false
     }
   },
 
   methods: {
+
+    setRating: function(rating) {
+      this.rating = rating;
+      console.log(rating);
+    },
+
     create () {
       console.log('StateForm -> create');
       if (this.loading) {

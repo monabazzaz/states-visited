@@ -34,12 +34,14 @@
   import State from './State';
   import StateForm from './StateForm';
   import MainLoader from './MainLoader';
+  import StarRating from 'vue-star-rating';
 
   export default {
     components: {
     State,
     StateForm,
-    MainLoader
+    MainLoader,
+    StarRating
   },
 
   data () {
@@ -95,14 +97,6 @@
     background-color: #e5f0ff !important;
   }
 
-/*body {
-  background: url(/images/stripes.jpg);
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  }*/
-
   .head {
     text-align: center;
     padding-top: 15px;
@@ -129,6 +123,7 @@
   .fade-enter-active, .fade-leave-active {
   transition: opacity .5s
   }
+  
   .fade-enter, .fade-leave-to {
   opacity: 0
   }

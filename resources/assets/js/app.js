@@ -16,6 +16,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import StateForm from './components/StateForm.vue'
 import Tracking from './components/Tracking.vue'
+import StarRating from 'vue-star-rating'
 import vmodal from 'vue-js-modal';
 
 Vue.use(vmodal)

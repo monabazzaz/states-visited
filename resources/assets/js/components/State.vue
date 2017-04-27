@@ -92,7 +92,7 @@
             </div>
             <div class="form-group">
               <label for="rating col-form-label">Edit your rating</label>
-              <input class="form-control" type="text" v-model="rating" />
+              <star-rating v-model="rating" v-bind:star-size="30"></star-rating>
             </div>
             </p>
             <p>
@@ -109,8 +109,13 @@
 <script>
 import axios from 'axios';
 import vmodal from 'vue-js-modal';
+import StarRating from 'vue-star-rating';
 
 export default {
+
+  components: {
+    StarRating
+  },
 
   props: [
     'state'
@@ -122,7 +127,7 @@ export default {
       year: this.state.year,
       days: this.state.days,
       notes: this.state.notes,
-      rating: this.state.rating,
+      rating: parseInt(this.state.rating),
       editing: false,
       loading: false,
       preview: false
