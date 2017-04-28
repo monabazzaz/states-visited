@@ -12,18 +12,21 @@ class StateController extends Controller
 
   public function index ()
   {
+    // list all states
     $states = State::all();
     return Response::json($states);
   }
 
   public function show ($id)
   {
+    // show the info of a single state
     $state = State::find($id);
     return Response::json($state);
   }
 
   public function update (Request $request, $id)
   {
+    // update the info of a single state
     $state = State::find($id);
     $state->update($request->all());
     return Response::json(['updated' => true]);
@@ -31,12 +34,14 @@ class StateController extends Controller
 
   public function create (Request $request)
   {
+    // create new state
     $state = State::create($request->all());
     return Response::json(['created' => true]);
   }
 
   public function destroy ($id)
   {
+    // delete a single state
     $state = State::find($id);
     $state->delete();
     return Response::json(['deleted' => true]);

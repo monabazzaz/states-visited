@@ -12,6 +12,8 @@ require('./bootstrap');
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+
+// imports all of the vue components needed
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import StateForm from './components/StateForm.vue'
@@ -21,6 +23,7 @@ import vmodal from 'vue-js-modal';
 
 Vue.use(vmodal)
 
+// directs the homepage to Tracking.vue
 Vue.component('Tracking', require('./components/Tracking.vue'));
 
 const app = new Vue({

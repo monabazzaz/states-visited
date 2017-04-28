@@ -6,6 +6,7 @@
         <p class="more">Please fill out the form on the left completely, click 'add state' and your visited state will show up on the list to the right.</p>
       </div>
 
+      <!-- creates stateform and creates posts if the form is completed -->
       <StateForm @created="fetch"></StateForm>
 
       <div class="StateList" v-show="states.length > 0">
@@ -18,9 +19,10 @@
       <MainLoader v-if="loading"></MainLoader>
       </transition>
 
+        <!-- footer present on the bottom of the page -->
         <footer>
           <div class="col-md-12">
-            <p>This state tracker was created for my Spring 2017 MEJO 583 class. The style guide for this application can be found <a href="/styles">here</a>. To access the github repository for this project as well as samples to my other work, please visit <a href="http://monabazzaz.org/portfolio">my portfolio</a>. Cheers!</p>
+            <p>This state tracker was created for my Spring 2017 MEJO 583 class. The style guide for this application can be found <a href="/styles">here</a>. This application implemented <a href="https://laravel.com/">Laravel</a> and <a href="https://monabazzaz.gitbooks.io/states-visited/content/">Gitbook</a>.To access the github repository for this project as well as samples to my other work, please visit <a href="http://monabazzaz.org/portfolio">my portfolio</a>. Cheers!</p>
           </div>
         </footer>
       </div>
@@ -76,10 +78,6 @@
 
     update (data) {
         this.fetch();
-        // var i = this.states.indexOf(data.state);
-        // for (var d in data) {
-        //   this.states[i][d] = data[d];
-        // }
       },
 
     remove (i) {

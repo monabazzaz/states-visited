@@ -1,6 +1,7 @@
 <template>
   <!-- <div class="container-fluid"> -->
     <div class= "visited">
+      <!-- the visable aspects of each posted state -->
       <div class="State panel panel-default rightbox">
         <div class="panel-heading">
 
@@ -11,12 +12,13 @@
           <a class="tool" href="#" @click.prevent="remove">
             <i class="glyphicon glyphicon-remove pull-right"></i>
           </a>
-          
+
         </div>
         <div class="panel-body">
           <div class="live" v-show="!editing">
             {{ state.name }} {{ state.year }}
           </div>
+          <!-- user can edit already inputed data -->
           <div class="editing" v-show="editing">
             <p>
             <div class="form-group">

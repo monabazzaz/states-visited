@@ -11,14 +11,23 @@
 |
 */
 
+    /*
+    landing page
+    */
 Route::get('/', function () {
     return view('Tracking');
 });
 
+    /*
+    styles page
+    */
 Route::get('/styles', function () {
     return view('Styles');
 });
 
+    /*
+    all states routes
+    */
 Route::get('/states', 'StateController@index');
 Route::post('/states', 'StateController@create');
 Route::get('/states/{id}', 'StateController@show');

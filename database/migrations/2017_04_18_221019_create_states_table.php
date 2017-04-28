@@ -7,7 +7,9 @@ use Illuminate\Database\Migrations\Migration;
 class CreateStatesTable extends Migration
 {
 
-
+    /*
+    Migration for the states table and values
+    */
     public function up()
     {
       Schema::create('states', function (Blueprint $table) {
@@ -22,7 +24,9 @@ class CreateStatesTable extends Migration
     }
 
 
-
+    /*
+    Drops the states table into the database if the table exists
+    */
     public function down()
     {
       Schema::dropIfExists('states');
