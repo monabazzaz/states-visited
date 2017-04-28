@@ -1,0 +1,268 @@
+/*This is the CSS styleguide for the style guide page*/
+
+.container {
+  padding-top: 25px;
+}
+
+/*Header for the style guide*/
+.styletitle {
+  font-family: 'Julius Sans One', sans-serif;
+  color: #2317c9;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+/*This actually styles the labels for each style asset*/
+.fonts {
+  font-family: 'Julius Sans One', sans-serif;
+  color: #4286f4;
+  text-align: center;
+  border: 1px solid #2317c9;
+  padding: 15px;
+}
+
+/*Styling for gray boxes around style guide examples on the right side of the page*/
+.merris {
+  border: 1px solid #2317c9;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: rgba(242, 242, 242, 0.6);
+}
+
+/*Styling for Coming Soon as header font in 3 weights*/
+.merri1 {
+  font-family: 'Coming Soon', cursive;
+  font-weight: lighter;
+  color: #ffc939;
+  text-align: center;
+}
+
+.merri2 {
+  font-family: 'Coming Soon', cursive;
+  font-weight: normal;
+  color: #ffc939;
+  text-align: center;
+}
+
+.merri3 {
+  font-family: 'Coming Soon', cursive;
+  font-weight: bold;
+  color: #ffc939;
+  text-align: center;
+}
+
+/*Styling for gray boxes around style guide examples on the right side of the page*/
+.notis {
+  border: 1px solid #2317c9;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: rgba(242, 242, 242, 0.6);
+}
+
+/*Styling body font Julius Sans One in 2 weights*/
+.noti1 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: normal;
+  color: #ffc939;
+  text-align: center;
+}
+
+.noti2 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
+  color: #ffc939;
+  text-align: center;
+}
+
+/*styles for medium blue box*/
+.dkblu {
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  background-color: #4286f4;
+}
+
+.dkblu h3 {
+  font-family: 'Coming Soon', cursive;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  color: #4286f4;
+}
+
+.dkblu:hover {
+  background: #00334d;
+}
+
+/*styles for dark blue box*/
+.ltblu {
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  background-color: #2317c9;
+}
+
+.ltblu h3 {
+  font-family: 'Coming Soon', cursive;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  color: #2317c9;
+}
+
+.ltblu:hover {
+  background: #00334d;
+}
+
+/*styles for light blue box*/
+.gry {
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  background-color: #e5f0ff;
+}
+
+.gry h3 {
+  font-family: 'Coming Soon', cursive;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  color: #e5f0ff;
+}
+
+.gry:hover {
+  background: #00334d;
+}
+
+/*styles for red box*/
+.ltgry {
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  background-color: red;
+}
+
+.ltgry h3 {
+  font-family: 'Coming Soon', cursive;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  color: red;
+}
+
+.ltgry:hover {
+  background: #00334d;
+}
+
+/*styles for white box*/
+.wht {
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+.wht h3 {
+  font-family: 'Coming Soon', cursive;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  color: white;
+}
+
+.wht:hover {
+  background: #00334d;
+}
+
+/*styles for gold box*/
+.yel {
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  background-color: #ffc939;
+}
+
+.yel h3 {
+  font-family: 'Coming Soon', cursive;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  color: #ffc939;
+}
+
+.yel:hover {
+  background: #00334d;
+}
+
+/*Styling for gray boxes around style guide examples on the right side of the page*/
+.xamps {
+  border: 1px solid #2317c9;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: rgba(242, 242, 242, 0.6);
+}
+
+/*Styling for gray boxes around style guide examples on the right side of the page*/
+.btns {
+  border: 1px solid #2317c9;
+  border-radius: 3px;
+  padding: 30px 5px 10px 5px;
+  background-color: rgba(242, 242, 242, 0.6);
+  text-align: center;
+}
+
+/*Styling for small medium and large buttons*/
+
+.btn-sm {
+  margin-bottom: 45px;
+  font-family: 'Julius Sans One', sans-serif;
+  background-color: #8cb1d9;
+  border-color: #8cb1d9;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn-lg {
+  margin-bottom: 45px;
+  font-family: 'Julius Sans One', sans-serif;
+  background-color: #336699;
+  color: white;
+}
+
+/*#contact_title {
+  font-family: 'Merriweather', serif;
+  color: #999999;
+}*/
+
+/*makes sure the form has padding on each side when on mobile*/
+.form-group {
+    font-family: 'Julius Sans One', sans-serif;
+    color: #ffc939;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h4 {
+  font-family: 'Julius Sans One', sans-serif;
+  color: #2317c9;
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+.memos {
+  font-family: 'Julius Sans One', sans-serif;
+  color: #ffc939;
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+/*Styling for lists*/
+ol {
+  font-family: 'Coming Soon', cursive;
+  color: #ffc939;
+  padding-left: 50px;
+  padding-right: 10px;
+}
+
+ul {
+  font-family: 'Coming Soon', cursive;
+  color: #ffc939;
+  padding-left: 50px;
+  padding-right: 10px;
+}

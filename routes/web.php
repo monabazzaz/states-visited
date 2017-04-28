@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('Tracking');
 });
 
+Route::get('/styles', function () {
+    return view('Styles');
+});
+
 Route::get('/states', 'StateController@index');
 Route::post('/states', 'StateController@create');
 Route::get('/states/{id}', 'StateController@show');

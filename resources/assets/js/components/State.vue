@@ -3,18 +3,15 @@
     <div class= "visited">
       <div class="State panel panel-default rightbox">
         <div class="panel-heading">
-          <modal name="preview">hello, world!</modal>
-          <a :href="preview" @click="show">
-            <i class="glyphicon glyphicon-eye-open"></i>
+
+          <a class="tool" href="#" @click.prevent="editing = true" v-show="!editing">
+            <i class="glyphicon glyphicon-pencil"></i>
           </a>
 
           <a class="tool" href="#" @click.prevent="remove">
             <i class="glyphicon glyphicon-remove pull-right"></i>
           </a>
-
-          <a class="tool" href="#" @click.prevent="editing = true" v-show="!editing">
-            <i class="glyphicon glyphicon-pencil pull-right"></i>
-          </a>
+          
         </div>
         <div class="panel-body">
           <div class="live" v-show="!editing">
@@ -99,6 +96,11 @@
               <button class="btn btn-success" @click="save">Save</button>
               <button class="btn btn-default" @click="cancel">Cancel</button>
             </p>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="live" v-show="!editing">
+            {{ state.notes }}
           </div>
         </div>
       </div>
