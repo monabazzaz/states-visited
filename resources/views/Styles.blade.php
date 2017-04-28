@@ -70,6 +70,83 @@
       </div>
       <br>
       <br>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-3"><h2 class="fonts">HEADERS</h2></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-6 xamps">
+          <h2 class="merrihed1">This is an example of h2 for Coming Soon</h2>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-3"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-6 xamps">
+          <h3 class="merrihed1">This is an example of h3 for Coming Soon</h3>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-3"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-6 xamps">
+          <h4 class="merrihed1">This is an example of h4 for Coming Soon</h4>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    <br>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-3"></div>
+      <div class="col-md-1"></div>
+      <div class="col-md-6 xamps">
+        <h5 class="merrihed1">This is an example of h5 for Coming Soon</h5>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <br>
+    <br>
+    <!---example paragraphs for style page--->
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-3">
+        <h2 class="fonts">PARAGRAPHS</h2>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-6 xamps">
+        <p class="merrihed1">Paragraph Coming Soon: <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies aliquet tristique. Quisque diam nisi, cursus eu ornare ut, fermentum non mi. Nunc lacinia neque eu neque gravida, nec auctor turpis faucibus. Integer ornare augue nulla, sit amet tempor lorem semper id.</p>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-6 xamps">
+        <p class="lead merrihed1">p.lead Coming Soon: <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies aliquet tristique. Quisque diam nisi, cursus eu ornare ut, fermentum non mi. Nunc lacinia neque eu neque gravida, nec auctor turpis faucibus. Integer ornare augue nulla, sit amet tempor lorem semper id.</p>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-6 xamps">
+        <p class="merrihed2">Paragraph light Coming Soon: <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies aliquet tristique. Quisque diam nisi, cursus eu ornare ut, fermentum non mi. Nunc lacinia neque eu neque gravida, nec auctor turpis faucibus. Integer ornare augue nulla, sit amet tempor lorem semper id.</p>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <br>
+    <br>
     <!---example button variations for style page--->
     <div class="row">
       <div class="col-md-1"></div>

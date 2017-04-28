@@ -196,6 +196,21 @@
   background-color: rgba(242, 242, 242, 0.6);
 }
 
+/*the following are the styles for examples of h2 h3 h4 h5 for coming soon*/
+.merrihed1 {
+  font-family: 'Coming Soon', cursive;
+  color: #ffc939;
+  text-align: center;
+}
+
+/*the following are the styles for examples of paragraphs for coming soon*/
+.merrihed2 {
+  font-family: 'Coming Soon', cursive;
+  font-weight: 100;
+  color: #ffc939;
+  text-align: center;
+}
+
 /*Styling for gray boxes around style guide examples on the right side of the page*/
 .btns {
   border: 1px solid #2317c9;
