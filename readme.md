@@ -1,40 +1,24 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+## States Visited Application
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+This application implements vue.js on the front-end and a Laravel API on the back-end for a user who wants to track how many of the 50 states in America they have been to. It integrates PHP in order to allow a user to add multiple properties regarding each state added. A user can document the name of a state, the year they visited, the number of days they spent there, any specifics notes they might have and rate the state on a scale of 0 to 5. Thanks to Representational State Transfer, or REST, users have the ability to create, read, update or delete content within their database via AJAX. There are four HTTP methods: GET, POST, PUT and DELETE, which allow users to request changes to their entries in the database.
 
-## About Laravel
+## Installation Instructions
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+1. Clone this repository
+2. Set up MAMP to run on the public folder inside that project folder via preferences in MAMP
+3. Set apache and nginx ports to 8888
+4. Set mysql on 8889
+5. Install composer through getcomposer.org. This will allow you to create laravel projects.
+6. Create a new database in phpmyadmin called app
+7. Run php artisan:migrate
+8. Install the chrome extension vue.js
+9. Run npm run hot
+10. Visit http://localhost:8888
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Official Documentation
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+Documentation for the website can be found on the [Laravel Website](https://laravel.com).
 
-## Learning Laravel
+## Gitbook Documentation
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
-
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+Documentation for this API in Gitbook can be found [here](https://monabazzaz.gitbooks.io/states-visited/content/).
